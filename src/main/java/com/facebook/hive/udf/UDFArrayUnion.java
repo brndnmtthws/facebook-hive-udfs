@@ -59,11 +59,15 @@ import java.util.HashSet;
           result_set.addAll(array);
         }
       }
-      return new ArrayList<Object>(result_set);
-    }
+			if (result_set != null) {
+				return new ArrayList<Object>(result_set);
+			} else {
+				return null;
+			}
+		}
 
-    @Override
-    public String getDisplayString(String[] input) {
-	  return new String();
-    }
-  }
+		@Override
+		public String getDisplayString(String[] input) {
+			return new String();
+		}
+	}

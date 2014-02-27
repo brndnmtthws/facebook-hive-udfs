@@ -1,7 +1,7 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
 @Description(name = "udflogisticregression",
              value = "_FUNC_(values) - Randomly samples from an 0-indexed index with weight proportional to arguments.")

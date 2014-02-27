@@ -1,8 +1,8 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
-import org.apache.hadoop.hive.ql.exec.Description;
 import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
 
 /**

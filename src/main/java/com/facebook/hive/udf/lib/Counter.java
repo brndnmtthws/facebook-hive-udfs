@@ -1,14 +1,13 @@
 package com.facebook.hive.udf.lib;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /** inspired by stanford nlp's Counter classes
  * @boconnor

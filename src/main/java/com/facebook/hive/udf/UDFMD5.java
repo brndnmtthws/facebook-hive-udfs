@@ -1,9 +1,11 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
-import java.security.*;
+import org.apache.hadoop.hive.ql.exec.UDF;
+
 import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Returns the MD5 hash of argument

@@ -1,9 +1,10 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
-import java.net.URLEncoder;
+import org.apache.hadoop.hive.ql.exec.UDF;
+
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 
 /**

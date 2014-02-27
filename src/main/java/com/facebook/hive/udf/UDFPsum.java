@@ -1,7 +1,7 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
 /**
  * Find the sum of elements in a list. If any are null, return null.

@@ -1,9 +1,7 @@
 package com.facebook.hive.udf;
 
-import java.lang.Math.*;
-
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
 /**
  * Find the great-circle distance between two (lat,long) points.

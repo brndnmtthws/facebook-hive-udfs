@@ -20,7 +20,6 @@ package com.facebook.hive.udf;
 
 // package org.apache.hadoop.hive.contrib.udaf;
 
-import java.util.LinkedList;
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
 

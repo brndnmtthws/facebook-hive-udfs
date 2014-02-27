@@ -1,12 +1,10 @@
 package com.facebook.hive.udf;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import com.facebook.hive.udf.lib.Counter;
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
-import org.json.JSONException;
-import com.facebook.hive.udf.lib.Counter;
+
+import java.util.Map;
 
 /**
  * Compute counts over a discrete (String-valued) support.

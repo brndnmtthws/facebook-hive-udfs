@@ -18,9 +18,10 @@
 
 package com.facebook.hive.udf;
 
-import java.util.HashMap;
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
+
+import java.util.HashMap;
 
 /**
  * Compute (normalized) entropy over a series of values.

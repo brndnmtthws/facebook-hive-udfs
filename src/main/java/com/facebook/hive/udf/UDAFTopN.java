@@ -20,10 +20,10 @@ package com.facebook.hive.udf;
 
 // package org.apache.hadoop.hive.contrib.udaf;
 
-import java.util.LinkedList;
-import java.util.PriorityQueue;
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
+
+import java.util.LinkedList;
 
 public final class UDAFTopN extends UDAF {
     public static class StringDoublePair implements Comparable<StringDoublePair> {

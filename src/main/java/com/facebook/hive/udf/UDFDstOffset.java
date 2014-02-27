@@ -1,13 +1,12 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
+import org.apache.hadoop.hive.ql.exec.UDFArgumentException;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.ArrayList;
-
-import org.apache.hadoop.hive.ql.exec.UDFArgumentException;
 
 /**
  * Return the integer corresponding to day-of-week for a given datestamp.

@@ -1,11 +1,10 @@
 package com.facebook.hive.udf;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.hadoop.hive.ql.exec.UDF;
-import org.apache.hadoop.hive.ql.exec.Description;
 import com.facebook.hive.udf.lib.SetOps;
+import org.apache.hadoop.hive.ql.exec.Description;
+import org.apache.hadoop.hive.ql.exec.UDF;
+
+import java.util.List;
 
 /**
  * Jaccard similarity |A&B| / |AvB|

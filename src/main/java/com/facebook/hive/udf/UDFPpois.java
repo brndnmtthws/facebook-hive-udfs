@@ -1,11 +1,7 @@
 package com.facebook.hive.udf;
 
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
-import org.apache.hadoop.hive.ql.udf.UDFType;
-
-
-import java.lang.Math;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
 /**
  * Compute the probability of an observation of a number of occurrances of

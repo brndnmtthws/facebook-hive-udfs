@@ -1,22 +1,19 @@
 package com.facebook.hive.udf;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-
 import org.apache.hadoop.hive.ql.exec.Description;
-import org.apache.hadoop.hive.ql.exec.UDFArgumentLengthException;
-import org.apache.hadoop.hive.ql.exec.UDFArgumentTypeException;
 import org.apache.hadoop.hive.ql.metadata.HiveException;
 import org.apache.hadoop.hive.ql.parse.SemanticException;
 import org.apache.hadoop.hive.ql.udf.generic.AbstractGenericUDAFResolver;
 import org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator;
 import org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator.AggregationBuffer;
-import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;
-import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorFactory;
-import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorUtils;
 import org.apache.hadoop.hive.serde2.objectinspector.ListObjectInspector;
+import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;
+import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorUtils;
 import org.apache.hadoop.hive.serde2.typeinfo.TypeInfo;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 
 
@@ -43,7 +40,7 @@ public class UDAFUnionSet extends AbstractGenericUDAFResolver {
   }
 
   public static class State implements AggregationBuffer {
-    HashSet<Object> set = new HashSet<Object>();
+    HashSet<Object> set = new HashSet<>();
   }
 
   public static class Evaluator extends GenericUDAFEvaluator {
@@ -54,7 +51,7 @@ public class UDAFUnionSet extends AbstractGenericUDAFResolver {
     public ObjectInspector init(Mode m, ObjectInspector[] parameters) throws HiveException {
       super.init(m, parameters);
       if (m == Mode.COMPLETE || m == Mode.PARTIAL1) {
-        inputOI = (ListObjectInspector) parameters[0];
+        inputOI = parameters[0];
       } else {
         internalMergeOI = (ListObjectInspector) parameters[0];
       }
@@ -90,12 +87,12 @@ public class UDAFUnionSet extends AbstractGenericUDAFResolver {
 
     @Override
     public Object terminate(AggregationBuffer agg) throws HiveException {
-      return new ArrayList<Object>(((State) agg).set);
+      return new ArrayList<>(((State) agg).set);
     }
 
     @Override
     public Object terminatePartial(AggregationBuffer agg) throws HiveException {
-      return new ArrayList<Object>(((State) agg).set);
+      return new ArrayList<>(((State) agg).set);
     }
   }
 }

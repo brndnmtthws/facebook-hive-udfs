@@ -1,12 +1,11 @@
 package com.facebook.hive.udf;
 
-import java.util.ArrayList;
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.hive.ql.exec.Description;
-
+import org.apache.hadoop.hive.ql.exec.UDF;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONArray;
+
+import java.util.ArrayList;
 
 
 /**

@@ -80,7 +80,7 @@ public class UDFArrayAggregate extends GenericUDF {
         throw new HiveException("Function name cannot be null.");
       }
 
-      GenericUDAFResolver resolver = 
+      GenericUDAFResolver resolver =
         FunctionRegistry.getGenericUDAFResolver(functionName.toString());
       if (resolver == null) {
         throw new HiveException("Could not find function with name " + 

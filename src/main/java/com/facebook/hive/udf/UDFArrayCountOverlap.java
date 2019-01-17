@@ -22,6 +22,7 @@ import java.util.HashMap;
   public class UDFArrayCountOverlap extends UDF {
 
     public Integer evaluate(ArrayList<String> arr1, ArrayList<String> arr2) {
+      if (arr1 == null || arr2 == null) return 0;
       return arr1.size() > arr2.size() ? evaluate2(arr2, arr1) : evaluate2(arr1, arr2);
     }
 

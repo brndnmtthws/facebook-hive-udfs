@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brndnmtthws/facebook-hive-udfs.svg?branch=master)](https://travis-ci.org/brndnmtthws/facebook-hive-udfs)
+
 facebook-hive-udfs
 ==================
 

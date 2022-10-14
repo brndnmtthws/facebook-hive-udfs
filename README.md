@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/brndnmtthws/facebook-hive-udfs.svg?branch=master)](https://travis-ci.org/brndnmtthws/facebook-hive-udfs) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brndnmtthws/facebook-hive-udfs)](https://dependabot.com)
-
+[![Java CI with Maven](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/maven.yml/badge.svg)](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/maven.yml)
 
 facebook-hive-udfs
 ==================

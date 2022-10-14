@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Build & test with Maven
 on: [push, pull_request]
 jobs:
   build:
@@ -12,4 +12,6 @@ jobs:
           distribution: "temurin"
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn package
+      - name: Test with Maven
+        run: mvn test

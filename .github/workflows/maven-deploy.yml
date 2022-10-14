@@ -1,4 +1,4 @@
-name: Maven Package
+name: Maven deploy
 on:
   push:
     tags:

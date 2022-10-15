@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/maven.yml/badge.svg)](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/maven.yml)
+[![Build & test with Maven](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/brndnmtthws/facebook-hive-udfs/actions/workflows/build-and-test.yml)
 
 facebook-hive-udfs
 ==================
@@ -20,6 +20,8 @@ mvn package
 ```
 
 This will produce a jar in `target/` which you can add to your Hive classpath.
+
+Alternatively, you can use the published jar included with [this repo's packages](https://github.com/brndnmtthws/facebook-hive-udfs/packages).
 
 # HOW DO USE IT?
 

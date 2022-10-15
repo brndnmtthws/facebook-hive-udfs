@@ -23,6 +23,35 @@ This will produce a jar in `target/` which you can add to your Hive classpath.
 
 Alternatively, you can use the published jar included with [this repo's packages](https://github.com/brndnmtthws/facebook-hive-udfs/packages).
 
+You can add this repository as a maven source with:
+
+```xml
+<project>
+...
+  <repositories>
+    <repository>
+      <id>github</id>
+      <name>facebook-hive-udfs</name>
+      <url>https://maven.pkg.github.com/brndnmtthws/facebook-hive-udfs</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+...
+</project>
+```
+
+And then include it in your `pom.xml`:
+
+```xml
+<dependency>
+  <groupId>com.airbnb</groupId>
+  <artifactId>facebook-udfs</artifactId>
+  <version>1.1.5</version>
+</dependency>
+```
+
 # HOW DO USE IT?
 
 Like any other UDF, silly!
